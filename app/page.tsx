@@ -11,7 +11,8 @@ export default function ComingSoon() {
 
         {/* Title */}
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight animate-fadeIn">
-          IMAGING TECHNOLOGIES
+          IMAGING TECHNOLOGY
+          {/* Imagingtechnology */}
         </h1>
         <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight animate-fadeIn">
           Coming Soon
