@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NavBar() {
   return (
-    <div>
+    <div className='flex items-center'>
         <div>Logo</div>
         <div>Home</div>
         <div>Products</div>
