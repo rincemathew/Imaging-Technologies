@@ -6,8 +6,11 @@ body {
 }
 
 :root {
-  --background: #ffffff;
+  --background: #F8F8FF;
   --foreground: #171717;
+  /* --main-color: #ed1d26; */
+  --main-color: #4169e1;
+  --main-color-light:#9bb3fb;
 }
 
 @theme inline {
