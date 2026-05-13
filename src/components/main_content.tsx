@@ -4,17 +4,17 @@ export default function MainContent() {
   return (
     <div>
       {/* Hero Section */}
-      <div className='flex items-center justify-center bg-amber-200 w-full'>
+      <div className='flex items-center justify-center w-full class="h-24 bg-gradient-to-tr from-cyan-500 to-blue-500"'>
         <div className='flex items-center w-5/6 justify-between py-8'>
           <div>
             <div className='text-4xl font-bold'>Empowering Doctors with the Right Imaging Technology </div>
-        <div className='text-lg text-gray-700 mt-4'>Authorized dealer of Konica Minolta & Medion Healthcare Pvt Ltd Delivering Transparent Consultation. Reliable Equipment. Long-term Support.</div>
+            <div className='text-lg text-gray-700 mt-4'>Authorized dealer of Konica Minolta & Medion Healthcare Pvt Ltd Delivering Transparent Consultation. Reliable Equipment. Long-term Support.</div>
           </div>
           <div>
 
           </div>
         </div>
-        
+
       </div>
       {/* Who We Are */}
       <div className=''>

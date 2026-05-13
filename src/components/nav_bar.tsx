@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function NavBar() {
@@ -13,13 +14,13 @@ export default function NavBar() {
           <div>imaging<br/>TECHNOLOGY</div>
         </div>
         <div className='flex items-center gap-3'>
-          <div>Home</div>
-          <div>Products</div>
-          <div>Services</div>
-          <div>About Us</div>
+          <Link href='/'>Home</Link>
+          <Link href='/products'>Products</Link>
+          <Link href='/services'>Services</Link>
+          <Link href='/about-us'>About Us</Link>
         </div>
         <div className='flex items-center'>
-          <div>Contact Us</div>
+          <Link href='/contact-us'>Contact Us</Link>
         </div>
       </div>
     </div>
