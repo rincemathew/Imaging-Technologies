@@ -16,8 +16,8 @@ export default function NavBar() {
             height={40}
           />
           <div className="leading-tight">
-            <div className="text-sm">imaging</div>
-            <div className="font-bold">TECHNOLOGY</div>
+            <div className="text-3xl font-bold text-(--main-color)">imaging</div>
+            <div className="text-base text-(--main-color)">TECHNOLOGY</div>
           </div>
         </Link>
 
@@ -25,7 +25,8 @@ export default function NavBar() {
         <div className="hidden md:flex items-center gap-8">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
-          <Link href="/services">Services</Link>
+          {/* <Link href="/services">Services</Link> */}
+          <Link href="/#">Services</Link>
           <Link href="/about-us">About Us</Link>
         </div>
 

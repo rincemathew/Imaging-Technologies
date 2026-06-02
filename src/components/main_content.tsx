@@ -38,7 +38,7 @@ export default function MainContent() {
       {/* Our Brands */}
       <div className='flex items-center justify-center w-full'>
         <div className='flex items-center w-5/6 justify-between py-8'>
-          <h1>Our Brands</h1>
+          <h1 className='text-(--main-color) text-sm font-bold mb-4'>Our Brands</h1>
           <div className='grid grid-cols-4 gap-4 w-full'>
             <div>Konica Minolta – Premium Digital Radiography
               Japanese technology
@@ -58,7 +58,7 @@ export default function MainContent() {
       {/* Why Choose Imaging Technology? */}
       <div className='flex items-center justify-center w-full'>
         <div className='flex items-center w-5/6 justify-between py-8'>
-          <h1>Why Choose Us?</h1>
+          <h1 className='text-(--main-color) text-sm font-bold mb-4'>Why Choose Us?</h1>
           🔷 Our Process
           <div className='grid grid-cols-4 gap-4 w-full'>
             <div>✔️ Doctor-first approach</div>
@@ -82,15 +82,16 @@ export default function MainContent() {
       {/* Who We Serve */}
       <div className='flex items-center justify-center w-full'>
         <div className='flex items-center w-5/6 justify-between py-8'>
-          <h1>Who We Serve </h1>
-          <div className='grid grid-cols-4 gap-4 w-full'>
+        <div className='flex flex-col w-full'>
+          <h1 className='text-(--main-color) text-sm font-bold mb-4'>Who We Serve </h1>
+          <div className='grid grid-cols-5 gap-5 w-full'>
             <div>Orthopedic Surgeons</div>
             <div>General Practitioners</div>
             <div>Small Hospitals (5–50 beds)</div>
             <div>Diagnostic Centers</div>
             <div>Day-care Surgical Centres</div>
-
           </div>
+        </div>
         </div>
       </div>
     </div>

@@ -8,6 +8,7 @@ export default function Footer() {
 
           <div className='flex items-center w-full'>
             <div className='w-1/3'>
+            <h1 className='text-(--main-color) text-sm font-bold mb-4'>Important Links</h1>
               Home
               Products
               Services
@@ -19,6 +20,7 @@ export default function Footer() {
               <div className='font-bold'>TECHNOLOGY</div>
             </div>
             <div className='w-1/3'>
+            <h1 className='text-(--main-color) text-sm font-bold mb-4'>Contact Links</h1>
               address<br />
               phone number<br />
               email
