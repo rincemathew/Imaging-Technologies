@@ -1,5 +1,11 @@
 import React from 'react'
 import Image from "next/image";
+import { MdEngineering } from "react-icons/md";
+import { MdOutlineInstallDesktop } from "react-icons/md";
+import { RiTeamFill } from "react-icons/ri";
+import { RiCustomerService2Fill } from "react-icons/ri";
+
+
 
 export default function page() {
     return (
@@ -85,12 +91,50 @@ export default function page() {
 
             <div className='flex items-center justify-center w-full class="h-24"'>
                 <div className='flex items-center w-5/6 justify-between py-8'>
-                    Our Team
-                    <div className='grid grid-cols-4 gap-4 w-full'>
-                        <div>Skilled Field Service Engineers</div>
-                        <div>Technical Installation Staff</div>
-                        <div>Office Coordination Team</div>
-                        <div>Customer Support Executives</div>
+                    <div className='flex flex-col w-full'>
+                        <h1 className='text-(--main-color) text-sm font-bold mb-4'>Our Team</h1>
+                        <div className='grid grid-cols-4 gap-4 w-full'>
+                            <div className="relative">
+                                <div className="bg-(--main-color-light) shadow-lg rounded-xl pl-16 pr-6 py-6 border border-gray-200">
+                                    <h3 className="text-xl font-semibold text-white">
+                                        Skilled Field Service Engineers
+                                    </h3>
+                                </div>
+                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-l from-[#b8c6f4] to-[#fff] rounded-full flex items-center justify-center shadow-lg">
+                                    <MdEngineering className="text-(--main-color) text-3xl" />
+                                </div>
+                            </div>
+                            <div className="relative">
+                                <div className="bg-(--main-color-light) shadow-lg rounded-xl pl-16 pr-6 py-6 border border-gray-200">
+                                    <h3 className="text-xl font-semibold text-white">
+                                        Technical Installation Staff
+                                    </h3>
+                                </div>
+                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-l from-[#b8c6f4] to-[#fff] rounded-full flex items-center justify-center shadow-lg">
+                                    <MdOutlineInstallDesktop className="text-(--main-color) text-3xl" />
+                                </div>
+                            </div>
+                            <div className="relative">
+                                <div className="bg-(--main-color-light) shadow-lg rounded-xl pl-16 pr-6 py-6 border border-gray-200">
+                                    <h3 className="text-xl font-semibold text-white">
+                                        Office Coordination Team
+                                    </h3>
+                                </div>
+                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-l from-[#b8c6f4] to-[#fff] rounded-full flex items-center justify-center shadow-lg">
+                                    <RiTeamFill className="text-(--main-color) text-3xl" />
+                                </div>
+                            </div>
+                            <div className="relative">
+                                <div className="bg-(--main-color-light) shadow-lg rounded-xl pl-16 pr-6 py-6 border border-gray-200">
+                                    <h3 className="text-xl font-semibold text-white">
+                                        Customer Support Executives
+                                    </h3>
+                                </div>
+                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-l from-[#b8c6f4] to-[#fff] rounded-full flex items-center justify-center shadow-lg">
+                                    <RiCustomerService2Fill className="text-(--main-color) text-3xl" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
