@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from "next/image";
+import { FaCheck } from "react-icons/fa";
+
 
 export default function MainContent() {
   return (
@@ -82,16 +84,23 @@ export default function MainContent() {
       {/* Who We Serve */}
       <div className='flex items-center justify-center w-full'>
         <div className='flex items-center w-5/6 justify-between py-8'>
-        <div className='flex flex-col w-full'>
-          <h1 className='text-(--main-color) text-sm font-bold mb-4'>Who We Serve </h1>
-          <div className='grid grid-cols-5 gap-5 w-full'>
-            <div>Orthopedic Surgeons</div>
-            <div>General Practitioners</div>
-            <div>Small Hospitals (5–50 beds)</div>
-            <div>Diagnostic Centers</div>
-            <div>Day-care Surgical Centres</div>
+          <div className='flex flex-col w-full'>
+            <h1 className='text-(--main-color) text-sm font-bold mb-4'>Who We Serve </h1>
+            <div className='grid grid-cols-5 gap-5 w-full'>
+              <div className="w-full shadow-lg rounded-xl shadow-blue-500/50 flex items-center justify-center">
+                <div className="w-14 h-14 border rounded-full flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
+                    <FaCheck className="text-white text-xs" />
+                  </div>
+                </div>
+              </div>
+              {/* <div>Orthopedic Surgeons</div> */}
+              <div>General Practitioners</div>
+              <div>Small Hospitals (5–50 beds)</div>
+              <div>Diagnostic Centers</div>
+              <div>Day-care Surgical Centres</div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
