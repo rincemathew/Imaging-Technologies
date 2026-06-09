@@ -1,6 +1,15 @@
 import React from 'react'
 import Image from "next/image";
-import { FaCheck } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
+import { LiaHospitalAltSolid } from "react-icons/lia";
+import { MdOutlineLocalHospital } from "react-icons/md";
+import { FaHospitalAlt } from "react-icons/fa";
+import { GiDoctorFace } from "react-icons/gi";
+
+
+
+
+
 
 
 export default function MainContent() {
@@ -86,19 +95,62 @@ export default function MainContent() {
         <div className='flex items-center w-5/6 justify-between py-8'>
           <div className='flex flex-col w-full'>
             <h1 className='text-(--main-color) text-sm font-bold mb-4'>Who We Serve </h1>
-            <div className='grid grid-cols-5 gap-5 w-full'>
-              <div className="w-full shadow-lg rounded-xl shadow-blue-500/50 flex items-center justify-center">
-                <div className="w-14 h-14 border rounded-full flex items-center justify-center">
-                  <div className="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center">
-                    <FaCheck className="text-white text-xs" />
+            <div className='grid grid-cols-5 gap-7 w-full'>
+              <div className="group w-full border-2 border-transparent shadow-[0_0_5px_0_rgba(0,0,0,0.3)] rounded-xl flex flex-col items-center justify-center hover:text-(--main-color) hover:border-(--main-color) hover:border-2 transition-all duration-500 ease-in-out">
+                <div className="w-full h-full p-8">
+                  <div className="w-full aspect-square rounded-full border-2 border-(--main-color) border-dashed flex items-center justify-center">
+                    <div className="w-full aspect-square m-2 rounded-full bg-blue-500 flex items-center justify-center">
+                      <GiDoctorFace className="text-white w-[85%] h-[85%] p-2 transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                    </div>
                   </div>
                 </div>
+                <h2 className='font-bold pt-2 pb-6'>Orthopedic Surgeons</h2>
+              </div>
+              <div className="group w-full border-2 border-transparent shadow-[0_0_5px_0_rgba(0,0,0,0.3)] rounded-xl flex flex-col items-center justify-center hover:text-(--main-color) hover:border-(--main-color) hover:border-2 transition-all duration-300">
+                <div className="w-full h-full p-8">
+                  <div className="w-full aspect-square rounded-full border-2 border-(--main-color) border-dashed flex items-center justify-center">
+                    <div className="w-full aspect-square m-2 rounded-full bg-blue-500 flex items-center justify-center">
+                      <FaUserDoctor className="text-white w-[85%] h-[85%] p-2 transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                    </div>
+                  </div>
+                </div>
+                <h2 className='font-bold pt-2 pb-6'>General Practitioners</h2>
+              </div>
+              <div className="group w-full border-2 border-transparent shadow-[0_0_5px_0_rgba(0,0,0,0.3)] rounded-xl flex flex-col items-center justify-center hover:text-(--main-color) hover:border-(--main-color) hover:border-2 transition-all duration-300">
+                <div className="w-full h-full p-8">
+                  <div className="w-full aspect-square rounded-full border-2 border-(--main-color) border-dashed flex items-center justify-center">
+                    <div className="w-full aspect-square m-2 rounded-full bg-blue-500 flex items-center justify-center">
+                      <FaHospitalAlt className="text-white w-[85%] h-[85%] p-2 transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                    </div>
+                  </div>
+                </div>
+                <h2 className='font-bold pt-2 pb-6'>Small Hospitals (5–50 beds)</h2>
+              </div>
+              <div className="group w-full border-2 border-transparent shadow-[0_0_5px_0_rgba(0,0,0,0.3)] rounded-xl flex flex-col items-center justify-center hover:text-(--main-color) hover:border-(--main-color) hover:border-2 transition-all duration-300">
+                <div className="w-full h-full p-8">
+                  <div className="w-full aspect-square rounded-full border-2 border-(--main-color) border-dashed flex items-center justify-center">
+                    <div className="w-full aspect-square m-2 rounded-full bg-blue-500 flex items-center justify-center">
+                      <MdOutlineLocalHospital className="text-white w-[85%] h-[85%] p-2 transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                    </div>
+                  </div>
+                </div>
+                <h2 className='font-bold pt-2 pb-6'>Diagnostic Centers</h2>
+              </div>
+              <div className="group w-full border-2 border-transparent shadow-[0_0_5px_0_rgba(0,0,0,0.3)] rounded-xl flex flex-col items-center justify-center hover:text-(--main-color) hover:border-(--main-color) hover:border-2 transition-all duration-300">
+                <div className="w-full h-full p-8">
+                  <div className="w-full aspect-square rounded-full border-2 border-(--main-color) border-dashed flex items-center justify-center">
+                    <div className="w-full aspect-square m-2 rounded-full bg-blue-500 flex items-center justify-center">
+                      <LiaHospitalAltSolid className="text-white w-[85%] h-[85%] p-2 transition-transform duration-500 ease-in-out group-hover:scale-110" />
+                    </div>
+                  </div>
+                </div>
+                <h2 className='font-bold pt-2 pb-6'>Day-care Surgical Centres</h2>
               </div>
               {/* <div>Orthopedic Surgeons</div> */}
-              <div>General Practitioners</div>
-              <div>Small Hospitals (5–50 beds)</div>
-              <div>Diagnostic Centers</div>
-              <div>Day-care Surgical Centres</div>
+              {/* <div>General Practitioners</div> */}
+              {/* <div>Small Hospitals (5–50 beds)</div> */}
+              {/* <div>Diagnostic Centers</div> */}
+              {/* <div>Day-care Surgical Centres</div> */}
             </div>
           </div>
         </div>
