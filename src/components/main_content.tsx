@@ -90,6 +90,58 @@ export default function MainContent() {
         </div>
       </div>
 
+      {/* Why Choose Us */}
+      <section className="py-xl px-gutter bg-surface-container-low" id="why-us">
+        <div className="max-w-container-max mx-auto">
+          <h2 className="font-headline-lg text-headline-lg text-center text-on-surface mb-xl">Why Choose Us</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-md">
+            <div className="bg-surface-container-lowest p-md rounded-xl shadow-sm flex gap-4 items-start border border-outline-variant/30">
+              <span className="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg" data-icon="medical_services">medical_services</span>
+              <div>
+                <h4 className="font-label-md text-label-md text-on-surface mb-1">Doctor-first approach</h4>
+              </div>
+            </div>
+            <div className="bg-surface-container-lowest p-md rounded-xl shadow-sm flex gap-4 items-start border border-outline-variant/30">
+              <span className="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg" data-icon="handshake">handshake</span>
+              <div>
+                <h4 className="font-label-md text-label-md text-on-surface mb-1">No pressure selling</h4>
+              </div>
+            </div>
+            <div className="bg-surface-container-lowest p-md rounded-xl shadow-sm flex gap-4 items-start border border-outline-variant/30">
+              <span className="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg" data-icon="analytics">analytics</span>
+              <div>
+                <h4 className="font-label-md text-label-md text-on-surface mb-1">Equipment selection based on case load</h4>
+              </div>
+            </div>
+            <div className="bg-surface-container-lowest p-md rounded-xl shadow-sm flex gap-4 items-start border border-outline-variant/30">
+              <span className="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg" data-icon="architecture">architecture</span>
+              <div>
+                <h4 className="font-label-md text-label-md text-on-surface mb-1">Site planning guidance</h4>
+              </div>
+            </div>
+            <div className="bg-surface-container-lowest p-md rounded-xl shadow-sm flex gap-4 items-start border border-outline-variant/30">
+              <span className="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg" data-icon="verified_user">verified_user</span>
+              <div>
+                <h4 className="font-label-md text-label-md text-on-surface mb-1">CE compliance</h4>
+              </div>
+            </div>
+            <div className="bg-surface-container-lowest p-md rounded-xl shadow-sm flex gap-4 items-start border border-outline-variant/30">
+              <span className="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg" data-icon="lightbulb">lightbulb</span>
+              <div>
+                <h4 className="font-label-md text-label-md text-on-surface mb-1">Transparent technical explanation</h4>
+              </div>
+            </div>
+            <div className="bg-surface-container-lowest p-md rounded-xl shadow-sm flex gap-4 items-start border border-outline-variant/30">
+              <span className="material-symbols-outlined text-primary bg-primary-container/20 p-2 rounded-lg" data-icon="support_agent">support_agent</span>
+              <div>
+                <h4 className="font-label-md text-label-md text-on-surface mb-1">After-sales coordination</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* Who We Serve */}
       <div className='flex items-center justify-center w-full'>
         <div className='flex items-center w-5/6 justify-between py-8'>
