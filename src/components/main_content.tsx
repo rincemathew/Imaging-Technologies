@@ -1,10 +1,14 @@
 import React from 'react'
 import Image from "next/image";
+import WhoWeAre from './who_we_are';
 import { FaUserDoctor } from "react-icons/fa6";
 import { LiaHospitalAltSolid } from "react-icons/lia";
 import { MdOutlineLocalHospital } from "react-icons/md";
 import { FaHospitalAlt } from "react-icons/fa";
 import { GiDoctorFace } from "react-icons/gi";
+
+
+
 
 
 
@@ -28,24 +32,7 @@ export default function MainContent() {
         </div>
 
       </div>
-      {/* Who We Are */}
-      <div className='flex items-center justify-center w-full'>
-        <div className='flex items-center w-5/6 justify-between py-8'>
-          <div className='w-1/2'>
-            <Image src='/images/home-page-title.png' alt='Logo' width={0} height={0} sizes='100vw' className='w-full h-auto' />
-          </div>
-          <div className='w-1/2'>
-            <h1>Imaging Technology is a Kerala-based medical imaging solutions provider specializing in:</h1>
-            <h6>✔️ Digital Radiography (DR Systems)
-              ✔️ X-Ray Rooms (50kW, 32kW, etc.)
-              ✔️ C-Arm Systems
-              ✔️ Imaging Equipment Consultation
-              ✔️ Clinical Establishment Support
-              Unlike traditional dealers, we focus on educating doctors before selling equipment, ensuring you invest in the right technology for your specialty and patient load</h6>
-          </div>
-        </div>
-      </div>
-
+      <WhoWeAre />
       {/* Our Brands */}
       <div className='flex items-center justify-center w-full'>
         <div className='flex items-center w-5/6 justify-between py-8'>
