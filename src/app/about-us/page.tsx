@@ -10,134 +10,474 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 export default function page() {
     return (
         <div>
-            <div className='flex items-center justify-center w-full class="h-24"'>
-                <div className='flex items-center w-5/6 justify-between py-8'>
-                    <div className='w-1/2'>
-                        <div>
-                            <div>Who We Are</div>
-                            <div className='text-4xl font-bold'>Empowering Doctors with the Right Imaging Technology </div>
-                            <div className='text-lg text-gray-700 mt-4'>Imaging Technology is a dedicated medical imaging solutions company founded by Sudheesh Kumar A and Mr. Jobish, built on the principles of technical clarity, ethical guidance, and long-term service commitment.<br />
-                                We specialize in the sales, consultation, installation, and maintenance of advanced imaging systems from globally recognized brands such as Konica Minolta and trusted Indian manufacturers including Medion Healthcare Pvt Ltd.<br />
-                                More than dealers, we are technology partners to doctors and hospitals.</div>
-                        </div>
-                        <div className='flex'>
-                            <div className='w-1/2'>
-                                Our Mission<br />
-                                To empower doctors with the right imaging technology through honest consultation, reliable products, and dependable service support
-                            </div>
-                            <div className='w-1/2'>
-                                Our Vision<br />
-                                To become Kerala’s most trusted doctor-centric medical imaging solutions provider.
-                            </div>
-                        </div>
+            {/* About Us Hero */}
+            <section className="flex justify-center w-full py-20 bg-white overflow-hidden">
+                <div className="w-full md:w-5/6 px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                    {/* Left Content */}
+                    <div>
+
+                        <span className="inline-block text-[var(--main-color)] font-semibold uppercase tracking-[4px] mb-4">
+                            Our Story
+                        </span>
+
+                        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                            Empowering Doctors with the Right{" "}
+                            <span className="text-[var(--main-color)]">
+                                Imaging Technology
+                            </span>
+                        </h1>
+
+                        <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+                            Imaging Technology is a dedicated medical imaging solutions
+                            company founded by Sudheesh Kumar A and Mr. Jobish.
+
+                            <br /><br />
+
+                            More than dealers, we are technology partners to doctors and
+                            hospitals across Kerala, providing honest guidance, advanced
+                            imaging solutions, and long-term technical support.
+                        </p>
 
                     </div>
-                    <div className='w-1/2'>
-                        <Image src='/images/about-us-main.png' alt='Logo' width={0} height={0} sizes='100vw' className='w-full h-auto' />
-                    </div>
-                </div>
 
-            </div>
-            <div className='flex items-center justify-center w-full class="h-24"'>
-                <div className='flex items-center w-5/6 justify-between py-8'>
+                    {/* Right Image */}
+                    <div className="relative group">
 
-                    <div className='w-1/2'>
-                        <div>Our Leadership</div>
-                        Sudheesh Kumar A<br />
-                        Doctor-focused Medical Imaging Consultant & Educator<br />
-                        With deep technical knowledge in Digital Radiography systems, Sudheesh guides doctors in selecting the right equipment based on specialty, patient load, and long-term investment planning — without pressure selling.<br />
-                    </div>
-                    <div className='w-1/2'>
-                        Mr. Jobish<br />
-                        Operations & Technical Support Lead<br />
-                        Mr. Jobish ensures smooth coordination in installation, service follow-up, and field execution, maintaining strong relationships with hospitals and diagnostic centers.<br />
-                        Together, we combine consultation expertise with operational efficiency.<br />
-                    </div>
-                </div>
-            </div>
+                        {/* Background Glow */}
+                        <div className="absolute -inset-4 bg-[var(--main-color-light)] opacity-40 rounded-3xl blur-3xl group-hover:opacity-60 transition duration-500"></div>
 
+                        <div className="relative overflow-hidden rounded-3xl shadow-2xl">
 
-
-            <div className='flex items-center justify-center w-full class="h-24"'>
-                <div className='flex items-center w-5/6 justify-between py-8'>
-                    What We Do<br />
-                    <div className='grid grid-cols-4 gap-4 w-full'>
-                        <div>Digital X-Ray Systems (Room DR, Portable DR)</div>
-                        <div>C-Arm Systems</div>
-                        <div>Ultrasound Systems</div>
-                        <div>Room Planning & Load Assessment</div>
-                        <div>Installation & Calibration</div>
-                        <div>After-Sales Support</div>
-                        <div>Equipment Upgrade Consultation</div>
-                        <div>Caring for Existing Radiology Equipment</div>
-                    </div>
-                </div>
-            </div>
-
-            <div className='flex items-center justify-center w-full class="h-24"'>
-                <div className='flex items-center w-5/6 justify-between py-8'>
-                    We strongly believe that healthcare providers should not replace equipment unnecessarily.<br />
-                    That’s why we also support and maintain:
-                    <div className='grid grid-cols-4 gap-4 w-full'>
-                        <div>Conventional X-ray Machines</div>
-                        <div>C-Arm Systems</div>
-                        <div>Ultrasound Machines</div>
-                        <div>Older Radiology Setups</div>
-                        <div>Our field engineers and office support team work closely to ensure timely service coordination, troubleshooting, and technical assistance — helping hospitals extend equipment life and maintain consistent patient care.</div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className='flex items-center justify-center w-full class="h-24"'>
-                <div className='flex items-center w-5/6 justify-between py-8'>
-                    <div className='flex flex-col w-full'>
-                        <h1 className='text-(--main-color) text-sm font-bold mb-4'>Our Team</h1>
-                        <div className='grid grid-cols-4 gap-4 w-full'>
-                            <div className="relative">
-                                <div className="bg-(--main-color-light) shadow-lg rounded-xl pl-16 pr-6 py-6 border border-gray-200">
-                                    <h3 className="text-xl font-semibold text-white">
-                                        Skilled Field Service Engineers
-                                    </h3>
-                                </div>
-                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-l from-[#b8c6f4] to-[#fff] rounded-full flex items-center justify-center shadow-lg">
-                                    <MdEngineering className="text-(--main-color) text-3xl" />
-                                </div>
-                            </div>
-                            <div className="relative">
-                                <div className="bg-(--main-color-light) shadow-lg rounded-xl pl-16 pr-6 py-6 border border-gray-200">
-                                    <h3 className="text-xl font-semibold text-white">
-                                        Technical Installation Staff
-                                    </h3>
-                                </div>
-                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-l from-[#b8c6f4] to-[#fff] rounded-full flex items-center justify-center shadow-lg">
-                                    <MdOutlineInstallDesktop className="text-(--main-color) text-3xl" />
-                                </div>
-                            </div>
-                            <div className="relative">
-                                <div className="bg-(--main-color-light) shadow-lg rounded-xl pl-16 pr-6 py-6 border border-gray-200">
-                                    <h3 className="text-xl font-semibold text-white">
-                                        Office Coordination Team
-                                    </h3>
-                                </div>
-                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-l from-[#b8c6f4] to-[#fff] rounded-full flex items-center justify-center shadow-lg">
-                                    <RiTeamFill className="text-(--main-color) text-3xl" />
-                                </div>
-                            </div>
-                            <div className="relative">
-                                <div className="bg-(--main-color-light) shadow-lg rounded-xl pl-16 pr-6 py-6 border border-gray-200">
-                                    <h3 className="text-xl font-semibold text-white">
-                                        Customer Support Executives
-                                    </h3>
-                                </div>
-                                <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-l from-[#b8c6f4] to-[#fff] rounded-full flex items-center justify-center shadow-lg">
-                                    <RiCustomerService2Fill className="text-(--main-color) text-3xl" />
-                                </div>
-                            </div>
+                            <Image
+                                src="/images/about-us-main.png"
+                                alt="Medical Imaging Technology"
+                                width={1000}
+                                height={700}
+                                className="w-full h-[350px] md:h-[500px] object-cover transition duration-700 group-hover:scale-105"
+                            />
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            {/* Mission & Vision */}
+            <section className="flex justify-center w-full py-20 bg-[var(--background-light)]">
+                <div className="w-full md:w-5/6 px-4">
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                        {/* Mission */}
+                        <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300">
+
+                            <div className="w-14 h-14 rounded-xl bg-[var(--main-color-light)] flex items-center justify-center mb-6">
+                                <span className="material-symbols-outlined text-3xl text-[var(--main-color)]">
+                                    track_changes
+                                </span>
+                            </div>
+
+                            <h3 className="text-2xl font-bold mb-4">
+                                Our Mission
+                            </h3>
+
+                            <p className="text-gray-600 leading-relaxed">
+                                To empower doctors with the right imaging technology through
+                                honest consultation, high-quality products, and localized
+                                technical support that ensures uninterrupted patient care.
+                            </p>
+
+                        </div>
+
+                        {/* Vision */}
+                        <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300">
+
+                            <div className="w-14 h-14 rounded-xl bg-[var(--main-color-light)] flex items-center justify-center mb-6">
+                                <span className="material-symbols-outlined text-3xl text-[var(--main-color)]">
+                                    visibility
+                                </span>
+                            </div>
+
+                            <h3 className="text-2xl font-bold mb-4">
+                                Our Vision
+                            </h3>
+
+                            <p className="text-gray-600 leading-relaxed">
+                                To become Kerala’s most trusted doctor-centric medical imaging
+                                solutions provider, recognized for ethical guidance and superior
+                                technical lifespan management.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* Leadership */}
+            <section className="flex justify-center w-full py-20">
+                <div className="w-full md:w-5/6 px-4">
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold mb-4">
+                            Visionary Leadership
+                        </h2>
+
+                        <p className="text-gray-600">
+                            Experts committed to ethical medical guidance.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                        {/* Sudheesh */}
+                        <div className="bg-white rounded-3xl border border-gray-200 p-8 text-center shadow-sm hover:shadow-xl transition-all duration-300">
+
+                            <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[var(--main-color-light)] mb-6">
+                                <Image
+                                    src="/images/sudheesh-kumar.jpg"
+                                    alt="Sudheesh Kumar A"
+                                    width={300}
+                                    height={300}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+
+                            <h3 className="text-2xl font-bold">
+                                Sudheesh Kumar A
+                            </h3>
+
+                            <p className="text-[var(--main-color)] font-semibold mt-2 mb-4">
+                                Medical Imaging Consultant & Educator
+                            </p>
+
+                            <p className="text-gray-600 leading-relaxed mb-6">
+                                With decades of experience in radiology education and consultancy,
+                                Sudheesh ensures every solution we provide is clinically sound,
+                                technically correct, and doctor-focused.
+                            </p>
+
+                            <div className="flex justify-center gap-3 flex-wrap">
+                                <span className="bg-[var(--main-color-light)] text-[var(--main-color)] px-4 py-2 rounded-full text-xs font-bold">
+                                    EDUCATION
+                                </span>
+
+                                <span className="bg-[var(--main-color-light)] text-[var(--main-color)] px-4 py-2 rounded-full text-xs font-bold">
+                                    ETHICAL GUIDANCE
+                                </span>
+                            </div>
+
+                        </div>
+
+                        {/* Jobish */}
+                        <div className="bg-white rounded-3xl border border-gray-200 p-8 text-center shadow-sm hover:shadow-xl transition-all duration-300">
+
+                            <div className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[var(--main-color-light)] mb-6">
+                                <Image
+                                    src="/images/jobish.jpg"
+                                    alt="Jobish"
+                                    width={300}
+                                    height={300}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+
+                            <h3 className="text-2xl font-bold">
+                                Mr. Jobish
+                            </h3>
+
+                            <p className="text-[var(--main-color)] font-semibold mt-2 mb-4">
+                                Operations & Technical Lead
+                            </p>
+
+                            <p className="text-gray-600 leading-relaxed mb-6">
+                                Managing the backbone of our technical operations, Jobish
+                                oversees installations and field support, ensuring equipment
+                                uptime remains our highest priority.
+                            </p>
+
+                            <div className="flex justify-center gap-3 flex-wrap">
+                                <span className="bg-[var(--main-color-light)] text-[var(--main-color)] px-4 py-2 rounded-full text-xs font-bold">
+                                    OPERATIONS
+                                </span>
+
+                                <span className="bg-[var(--main-color-light)] text-[var(--main-color)] px-4 py-2 rounded-full text-xs font-bold">
+                                    INFRASTRUCTURE
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* Services & Legacy Support */}
+            <section className="flex justify-center w-full py-20">
+                <div className="w-full md:w-5/6 px-4">
+
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+                        {/* Services */}
+                        <div className="lg:col-span-7">
+
+                            <h2 className="text-4xl font-bold mb-10">
+                                Comprehensive Imaging Solutions
+                            </h2>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                                <div className="p-6 rounded-2xl bg-[var(--background-light)] hover:bg-[var(--main-color-light)]/30 transition-all duration-300">
+                                    <span className="material-symbols-outlined text-4xl text-[var(--main-color)] mb-4">
+                                        radiology
+                                    </span>
+
+                                    <h5 className="font-bold text-lg mb-2">
+                                        Digital X-Ray
+                                    </h5>
+
+                                    <p className="text-gray-600">
+                                        DR Panels, High-frequency generators, and complete CR-to-DR conversion solutions.
+                                    </p>
+                                </div>
+
+                                <div className="p-6 rounded-2xl bg-[var(--background-light)] hover:bg-[var(--main-color-light)]/30 transition-all duration-300">
+                                    <span className="material-symbols-outlined text-4xl text-[var(--main-color)] mb-4">
+                                        ecg
+                                    </span>
+
+                                    <h5 className="font-bold text-lg mb-2">
+                                        C-Arm Systems
+                                    </h5>
+
+                                    <p className="text-gray-600">
+                                        Surgical imaging solutions for orthopedic, pain management, and cardiac procedures.
+                                    </p>
+                                </div>
+
+                                <div className="p-6 rounded-2xl bg-[var(--background-light)] hover:bg-[var(--main-color-light)]/30 transition-all duration-300">
+                                    <span className="material-symbols-outlined text-4xl text-[var(--main-color)] mb-4">
+                                        ultrasound
+                                    </span>
+
+                                    <h5 className="font-bold text-lg mb-2">
+                                        Ultrasound Systems
+                                    </h5>
+
+                                    <p className="text-gray-600">
+                                        Precision diagnostic scanners for general practice and specialty clinics.
+                                    </p>
+                                </div>
+
+                                <div className="p-6 rounded-2xl bg-[var(--background-light)] hover:bg-[var(--main-color-light)]/30 transition-all duration-300">
+                                    <span className="material-symbols-outlined text-4xl text-[var(--main-color)] mb-4">
+                                        architecture
+                                    </span>
+
+                                    <h5 className="font-bold text-lg mb-2">
+                                        Room Planning
+                                    </h5>
+
+                                    <p className="text-gray-600">
+                                        Regulatory-compliant radiology room planning and electrical load assessment.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        {/* Legacy Support */}
+                        <div className="lg:col-span-5">
+
+                            <div className="relative h-full bg-[var(--main-color)] text-white rounded-3xl p-8 overflow-hidden">
+
+                                {/* Background Icon */}
+                                <div className="absolute top-4 right-4 opacity-10">
+                                    <span className="material-symbols-outlined text-[120px]">
+                                        construction
+                                    </span>
+                                </div>
+
+                                <h3 className="text-3xl font-bold mb-6">
+                                    Legacy Equipment Support
+                                </h3>
+
+                                <p className="leading-relaxed text-white/90 mb-8">
+                                    We believe in sustainability. Our team provides specialized
+                                    maintenance and technical support for conventional X-ray
+                                    systems and older radiology setups, extending the life of
+                                    your critical assets when others recommend replacement.
+                                </p>
+
+                                <div className="space-y-4">
+
+                                    <div className="flex items-center gap-3">
+                                        <span className="material-symbols-outlined text-green-300">
+                                            check_circle
+                                        </span>
+                                        <span>Spare Parts Sourcing</span>
+                                    </div>
+
+                                    <div className="flex items-center gap-3">
+                                        <span className="material-symbols-outlined text-green-300">
+                                            check_circle
+                                        </span>
+                                        <span>Calibration Services</span>
+                                    </div>
+
+                                    <div className="flex items-center gap-3">
+                                        <span className="material-symbols-outlined text-green-300">
+                                            check_circle
+                                        </span>
+                                        <span>Safety Audits & Compliance Checks</span>
+                                    </div>
+
+                                    <div className="flex items-center gap-3">
+                                        <span className="material-symbols-outlined text-green-300">
+                                            check_circle
+                                        </span>
+                                        <span>Preventive Maintenance Programs</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* Team Pillars */}
+            <section className="flex justify-center w-full py-20 bg-[var(--background-light)]">
+                <div className="w-full md:w-5/6 px-4">
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold mb-4">
+                            The Pillars of Our Team
+                        </h2>
+
+                        <p className="text-gray-600">
+                            Every member is dedicated to the technical precision your practice demands.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                        <div className="bg-white p-8 rounded-3xl border border-gray-200 flex flex-col items-center text-center shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                            <div className="w-16 h-16 rounded-full bg-[var(--main-color-light)] flex items-center justify-center mb-5">
+                                <span className="material-symbols-outlined text-3xl text-[var(--main-color)]">
+                                    engineering
+                                </span>
+                            </div>
+
+                            <h4 className="font-bold text-xl mb-2">
+                                Service Engineers
+                            </h4>
+
+                            <p className="text-gray-600">
+                                Skilled field experts for rapid on-site troubleshooting and technical support.
+                            </p>
+                        </div>
+
+                        <div className="bg-white p-8 rounded-3xl border border-gray-200 flex flex-col items-center text-center shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                            <div className="w-16 h-16 rounded-full bg-[var(--main-color-light)] flex items-center justify-center mb-5">
+                                <span className="material-symbols-outlined text-3xl text-[var(--main-color)]">
+                                    build
+                                </span>
+                            </div>
+
+                            <h4 className="font-bold text-xl mb-2">
+                                Installation Staff
+                            </h4>
+
+                            <p className="text-gray-600">
+                                Precision technical setup and imaging system integration specialists.
+                            </p>
+                        </div>
+
+                        <div className="bg-white p-8 rounded-3xl border border-gray-200 flex flex-col items-center text-center shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                            <div className="w-16 h-16 rounded-full bg-[var(--main-color-light)] flex items-center justify-center mb-5">
+                                <span className="material-symbols-outlined text-3xl text-[var(--main-color)]">
+                                    calendar_month
+                                </span>
+                            </div>
+
+                            <h4 className="font-bold text-xl mb-2">
+                                Office Coordination
+                            </h4>
+
+                            <p className="text-gray-600">
+                                Seamless logistics and administrative support for every project.
+                            </p>
+                        </div>
+
+                        <div className="bg-white p-8 rounded-3xl border border-gray-200 flex flex-col items-center text-center shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+                            <div className="w-16 h-16 rounded-full bg-[var(--main-color-light)] flex items-center justify-center mb-5">
+                                <span className="material-symbols-outlined text-3xl text-[var(--main-color)]">
+                                    support_agent
+                                </span>
+                            </div>
+
+                            <h4 className="font-bold text-xl mb-2">
+                                Customer Support
+                            </h4>
+
+                            <p className="text-gray-600">
+                                Dedicated assistance and technical query handling whenever required.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* CTA Section */}
+            <section className="flex justify-center w-full py-20">
+                <div className="w-full md:w-5/6 px-4">
+
+                    <div className="relative overflow-hidden rounded-[40px] bg-[var(--main-color)] p-10 md:p-16 text-center text-white">
+
+                        {/* Background Glow */}
+                        <div className="absolute inset-0 opacity-10">
+                            <div className="w-full h-full bg-radial from-white/30 via-transparent to-transparent"></div>
+                        </div>
+
+                        <div className="relative z-10">
+
+                            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                                Ready to Upgrade Your Imaging Quality?
+                            </h2>
+
+                            <p className="text-lg max-w-3xl mx-auto mb-10 text-white/90">
+                                Join hundreds of clinics and hospitals across Kerala who trust
+                                Imaging Technology for honest consultation, advanced imaging
+                                equipment, and superior technical support.
+                            </p>
+
+                            <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+                                <button className="bg-white text-[var(--main-color)] px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all duration-300">
+                                    Book Free Consultation
+                                </button>
+
+                                <button className="border-2 border-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-[var(--main-color)] transition-all duration-300">
+                                    View Our Solutions
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
         </div>
     )
 }
