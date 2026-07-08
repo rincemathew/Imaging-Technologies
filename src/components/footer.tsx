@@ -62,15 +62,15 @@ export default function Footer() {
 
             <div className="space-y-3 text-gray-700">
               <p>
-                Kochi, Kerala, India
+                Room No.27/120 A4, 1st Floor, Farzana Building, Behind Gokulam Mall, Near Amma hotel, Puthiyara P.O, Kozhikode - 673004
               </p>
 
               <p>
-                +91 XXXXX XXXXX
+                +91 95442 66923
               </p>
 
               <p>
-                info@imagingtechnology.in
+                service.imaging@gmail.com
               </p>
             </div>
           </div>

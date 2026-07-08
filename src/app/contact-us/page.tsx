@@ -40,8 +40,8 @@ function page() {
 
                                 <div>
                                     <h3 className="font-bold text-xl mb-2">Phone</h3>
-                                    <p>Sales: +91 XXXXX XXXXX</p>
-                                    <p>Support: +91 XXXXX XXXXX</p>
+                                    <p>Sales: +91 95442 66923</p>
+                                    <p>Support: +91 70120 16669</p>
                                 </div>
                             </div>
                         </div>
@@ -56,8 +56,8 @@ function page() {
 
                                 <div>
                                     <h3 className="font-bold text-xl mb-2">Email</h3>
-                                    <p>info@imagingtechnology.in</p>
-                                    <p>support@imagingtechnology.in</p>
+                                    <p>service.imaging@gmail.com</p>
+                                    {/* <p>support@imagingtechnology.in</p> */}
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ function page() {
                                 <div>
                                     <h3 className="font-bold text-xl mb-2">Office Address</h3>
                                     <p>
-                                        Kochi, Kerala, India
+                                        Room No.27/120 A4, 1st Floor, Farzana Building, Behind Gokulam Mall, Near Amma hotel, Puthiyara P.O, Kozhikode - 673004
                                     </p>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@ function page() {
                     <div className="relative h-[450px] rounded-3xl overflow-hidden shadow-lg">
 
                         <iframe
-                            src="https://maps.google.com/maps?q=Kochi,%20Kerala&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.062438632061!2d75.79030967452304!3d11.256817250150199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba659fe06923d89%3A0x2eaf7091feeff07a!2sIMAGING%20TECHNOLOGY!5e0!3m2!1sen!2sin!4v1783528481984!5m2!1sen!2sin"
                             className="absolute inset-0 w-full h-full border-0"
                         />
 
