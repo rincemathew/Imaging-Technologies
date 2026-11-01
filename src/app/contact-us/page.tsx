@@ -41,7 +41,7 @@ function page() {
                                 <div>
                                     <h3 className="font-bold text-xl mb-2">Phone</h3>
                                     <p>Sales: +91 95442 66923</p>
-                                    <p>Support: +91 70120 16669</p>
+                                    <p>Support: +91 70120 16663</p>
                                 </div>
                             </div>
                         </div>
